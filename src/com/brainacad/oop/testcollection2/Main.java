@@ -9,9 +9,9 @@ import java.util.List;
  */
 public class Main {
     public static void main(String... a){
-        List<String> arrayList = new LinkedList<>();
+        List<String> arrayList = new LinkedList<String>();
         for (int i = 0; i < 10; i++) {
-            arrayList.add((int)(Math.random()*10),"number_" + i);
+            arrayList.add((int)(Math.random()*arrayList.size()),"number_" + i);
         }
 
         Iterator<String> iterator = arrayList.iterator();
